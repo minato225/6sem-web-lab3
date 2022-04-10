@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Car Service</title>
+	<link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body onload="generateForm('carForm', 'carTable', 'carSubmit', Cars, CarHeader)">
+	<header>
+		<div class="topnav">
+			<a href="./index.html">Home</a>
+			<a href="./showAllCarDrvers.html">Car Drivers</a>
+			<a href="./showAllOrders.html">Orders</a>
+			<a href="./showBroken.html">Broken</a>
+			<a class="active" href="./addCar.html">New Car</a>
+			<a href="./addOrder.html">New Order</a>
+		</div>
+	</header>
+	<div>
+		<form id="carForm"></form>
+		<hr />
+		<button id="carSubmit">Submit</button>
+		<hr />
+		<div id="carTable"></div>
+	</div>
+
+	<script src="../js/data.js"></script>
+	<script src="../js/generate.js"></script>
+</body>
+
+</html>
